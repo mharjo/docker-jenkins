@@ -12,14 +12,14 @@
         state: present
       when:
         - ansible_distribution == "CentOS"
-   - name: run container
-     docker-container:
-       name: container
-       detach: yes
-       image: "masbejox/httpd:1"
-       state: started
-       exposed_ports:
-         - 80/tcp
-       published_ports:
-         - 8085:80
+  - name: run container
+    docker-container:
+      name: container
+      detach: yes
+      image: "masbejox/httpd:1"
+      state: started
+      exposed_ports:
+        - 80/tcp
+      published_ports:
+        - 8085:80
     
