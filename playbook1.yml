@@ -16,7 +16,7 @@
       docker_container:
         name: container
         detach: yes
-        image: "masbejox/httpd:1"
+        image: "masbejox/httpd:5"
         state: started
         exposed_ports:
           - 80/tcp
